@@ -7,8 +7,12 @@
     
 */
 
-const env = "DEV"; // Toggle between these possible values "DEV" | "STAGE" | "PROD"
+const env = "STAGE"; // Toggle between these possible values "DEV" | "STAGE" | "PROD"
 let databaseCredential = "devuser:password";
+
+if (env === "STAGE"){
+    databaseCredential = "stageuser:password";
+}
 
 // Task: Add code here
 
