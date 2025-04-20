@@ -26,10 +26,10 @@ function convert(keyArr, valueArr){
         - Step 4: Write a return statement to return the object literal after the for-loop code block.
     */
    let obj = {};
-   for (let x = 0; x < bookIdArr.length; x++){
-    for (let y = 0; y < bookTitle.length; y++){
+   for (let x = 0; x < keyArr.length; x++){
+    for (let y = 0; y < valueArr.length; y++){
         if (x == y){
-            obj[bookIdArr[x]] = bookTitle[y];
+            obj[keyArr[x]] = valueArr[y];
         }
     }
    }
